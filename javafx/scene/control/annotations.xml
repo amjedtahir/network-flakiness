@@ -1,5 +1,5 @@
 <root>
-    <item name='javafx.scene.control.Dialog dialogPane'>
-        <annotation name='javafx.fxml.FXML'/>
-    </item>
+	<item name='javafx.scene.control.Dialog dialogPane'>
+		<annotation name='javafx.fxml.FXML' />
+	</item>
 </root>
