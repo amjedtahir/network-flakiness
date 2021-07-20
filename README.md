@@ -5,16 +5,15 @@
 
 examples:
 Network connection is tested in `URLDownloadTest`
-https://github.com/JabRef/jabref/blob/bb011c9313367a28990ae213b3920fe6cd10d1dc/src/test/java/org/jabref/logic/net/URLDownloadTest.java
+https://github.com/amjedtahir/jabref/tree/master/src/test/java/org/jabref/logic/net
 
 test fail when connection is down
 To replicate:
-1. run tests in `org.jabref.logic.net` as `gradle test --tests org.jabref.logic.net.*` with connection enabled.
-2. rerun all tests as `gradle test --tests org.jabref.logic.net.*` now with connection disabled.
+1. run tests in `org.jabref.logic.net` using the following command `gradle test --tests org.jabref.logic.net.*` with internet connection enabled.
+2. rerun all tests `gradle test --tests org.jabref.logic.net.*` now with connection disabled.
 
-throws an `AssertionFailedError`
 
-Full error
+Stacktrace
 
 ``` Test testCheckConnectionSuccess() FAILED
 
@@ -28,4 +27,10 @@ Full error
   java.net.UnknownHostException: www.google.com
       at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567)
       at java.base/java.net.Socket.connect(Socket.java:645)
-      at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)...```
+      at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)...
+```
+
+Tests still throw the same exception when using rules. See the example in `URLDownloadTest2` under https://github.com/amjedtahir/jabref/tree/master/src/test/java/org/jabref/logic/net 
+
+
+
