@@ -1,4 +1,3 @@
-# List of programs used in this study
 
 ## Network dependencies
 
